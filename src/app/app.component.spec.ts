@@ -66,7 +66,7 @@ describe('AppComponent with waitForAsync', () => {
     fixture.detectChanges();
   }));
 
-  // This test fails, because whenStable waits the duration on the timer.
+  // This test fails, because whenStable waits the duration of the timer. It would otherwise pass.
   it('should render a message with the name', waitForAsync(async () => {
     await fixture.whenStable();
     fixture.detectChanges();
